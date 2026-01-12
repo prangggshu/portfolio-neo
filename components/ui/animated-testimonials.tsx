@@ -1,6 +1,6 @@
 "use client";
 
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import { IconArrowLeft, IconArrowRight, IconExternalLink, IconBrandGithub } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 
 import { useEffect, useState } from "react";
@@ -10,6 +10,8 @@ type Testimonial = {
   name: string;
   designation: string;
   src: string;
+  deployed?: string;
+  code?: string;
 };
 export const AnimatedTestimonials = ({
   testimonials,
@@ -154,6 +156,32 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
+          <div className="flex flex-col gap-4 pt-8">
+            <div className="flex gap-3">
+              {testimonials[active].deployed && (
+                <a
+                  href={testimonials[active].deployed}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/20"
+                >
+                  <IconExternalLink className="w-4 h-4" />
+                  <span className="text-sm font-medium">Live</span>
+                </a>
+              )}
+              {testimonials[active].code && (
+                <a
+                  href={testimonials[active].code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/20"
+                >
+                  <IconBrandGithub className="w-4 h-4" />
+                  <span className="text-sm font-medium">Code</span>
+                </a>
+              )}
+            </div>
+          </div>
           <div className="mt-4 flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}

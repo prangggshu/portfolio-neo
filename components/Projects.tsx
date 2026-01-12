@@ -5,7 +5,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { Component as EtheralShadow } from "@/components/ui/etheral-shadow";
 
 export default function Projects() {
-  const words = ["better", "cute", "beautiful", "modern"];
+  const words = ["clean", "focused", "modern", "reliable"];
   const projects = [
     {
       quote:
@@ -13,6 +13,8 @@ export default function Projects() {
       name: "GreenCart",
       designation: "React • Node.js • MongoDB • Express • JWT • Stripe",
       src: "/greencart.png",
+      deployed: "https://greencart-olive-kappa.vercel.app/",
+      code: "https://github.com/prangggshu/GreenCart-Public",
     },
     {
       quote:
@@ -20,6 +22,7 @@ export default function Projects() {
       name: "KIIT Saathi",
       designation: "React • TypeScript • Supabase • Git • GitHub",
       src: "/kiitsaathi.png",
+      deployed: "https://kiitsaathi.in",
     },
     {
       quote:
@@ -27,6 +30,8 @@ export default function Projects() {
       name: "Spotify Web Player Clone",
       designation: "HTML • CSS • JavaScript • Vanilla",
       src: "/spotify.png",
+      deployed: "https://misfit-spotify.netlify.app/",
+      code: "https://github.com/prangggshu/spotify-clone",
     },
   ];
 

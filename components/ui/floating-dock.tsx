@@ -161,7 +161,19 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href} onClick={(e) => { e.preventDefault(); window.location.hash = href.replace('#', ''); }}>
+    <a 
+      href={href} 
+      onClick={(e) => { 
+        // Only prevent default for internal hash links
+        if (href.startsWith('#')) {
+          e.preventDefault(); 
+          window.location.hash = href.replace('#', ''); 
+        }
+        // For external links, let the browser handle it normally
+      }}
+      target={href.startsWith('http') ? '_blank' : undefined}
+      rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+    >
       <motion.div
         ref={ref}
         style={{ width, height }}

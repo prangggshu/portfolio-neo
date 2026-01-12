@@ -1,4 +1,9 @@
 import { DottedSurface } from "@/components/ui/dotted-surface";
+import {
+  IconMail,
+  IconBrandLinkedin,
+  IconBrandGithub,
+} from "@tabler/icons-react";
 
 export default function Contact() {
   return (
@@ -18,8 +23,8 @@ export default function Contact() {
               href="mailto:your.email@example.com"
               className="w-full flex items-center gap-4 p-4  rounded-lg hover:bg-neutral-900 transition-colors border border-neutral-600"
             >
-              <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white text-xl">
-                ✉
+              <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                <IconMail className="w-6 h-6" />
               </div>
               <div>
                 <p className="font-medium text-zinc-200">Email</p>
@@ -32,8 +37,8 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="w-full flex items-center gap-4 p-4 rounded-lg hover:bg-neutral-900 transition-colors border border-neutral-600"
             >
-              <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white text-xl">
-                in
+              <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                <IconBrandLinkedin className="w-6 h-6" />
               </div>
               <div>
                 <p className="font-medium text-zinc-200">LinkedIn</p>
@@ -46,8 +51,8 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="w-full md:col-span-2 md:max-w-sm md:mx-auto flex items-center gap-4 p-4  rounded-lg hover:bg-neutral-900 transition-colors border border-neutral-600"
             >
-              <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white text-xl">
-                &lt;/&gt;
+              <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-white">
+                <IconBrandGithub className="w-6 h-6" />
               </div>
               <div>
                 <p className="font-medium text-zinc-200">GitHub</p>

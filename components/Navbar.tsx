@@ -62,14 +62,14 @@ export default function Navbar() {
       icon: (
         <IconBrandGithub className="h-full w-full text-white" />
       ),
-      href: "https://github.com/yourusername",
+      href: "https://github.com/prangggshu",
     },
     {
       title: "LinkedIn",
       icon: (
         <IconBrandLinkedin className="h-full w-full text-white" />
       ),
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://linkedin.com/in/prangggshu",
     },
   ];
 
