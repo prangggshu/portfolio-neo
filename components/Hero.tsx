@@ -38,7 +38,7 @@ export default function Hero() {
           {/* Text Content - Left Half */}
           <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left px-2 md:px-0">
             {/* Encrypted Text */}
-            <div className="mb-8">
+            <div className="mb-12">
               <p className="text-2xl md:text-3xl">
                 {showEncryptedText && (
                   <EncryptedText
@@ -53,7 +53,7 @@ export default function Hero() {
             
             {/* Text Generate Effect */}
             <div
-              className="text-lg md:text-xl text-white transition-opacity duration-500 md:pl-24 lg:pl-36"
+              className="mb-12 text-lg md:text-xl text-white transition-opacity duration-500 md:pl-24 lg:pl-36"
               suppressHydrationWarning
             >
               {showTextGenerate ? (
@@ -65,7 +65,7 @@ export default function Hero() {
           </div>
 
           {/* Pixelated Canvas - Right Half */}
-          <div className="mt-6 md:mt-0 flex items-center justify-center md:justify-end">
+          <div className="mr-16 mb-24 mt-4 md:mt-0 flex items-center justify-center md:justify-end">
             <PixelatedCanvas
               src="/dp4.png"
               width={320}

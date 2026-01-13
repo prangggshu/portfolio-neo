@@ -144,8 +144,6 @@ export default function Skills() {
         "Software Engineering",
         "Machine Learning",
         "Artificial Intelligence",
-        "Data Mining and Data Warehousing",
-        "Distributed Operating Systems",
       ],
     },
     {
