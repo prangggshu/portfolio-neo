@@ -30,16 +30,16 @@ export default function Hero() {
       <TerminalLoader onComplete={() => setLoaderComplete(true)} />
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center px-4 py-20 bg-black relative overflow-hidden"
+        className="min-h-screen flex items-center justify-center px-4 py-16 md:py-20 bg-black relative overflow-hidden"
       >
       <StripedPattern className="opacity-10 text-white" />
       <div className="w-full max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 min-h-[600px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 min-h-[600px]">
           {/* Text Content - Left Half */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left px-2 md:px-0">
             {/* Encrypted Text */}
             <div className="mb-8">
-              <p className="text-left text-2xl">
+              <p className="text-2xl md:text-3xl">
                 {showEncryptedText && (
                   <EncryptedText
                     text="Welcome to the Matrix, Neo."
@@ -53,7 +53,7 @@ export default function Hero() {
             
             {/* Text Generate Effect */}
             <div
-              className="pl-36 text-lg text-white transition-opacity duration-500"
+              className="text-lg md:text-xl text-white transition-opacity duration-500 md:pl-24 lg:pl-36"
               suppressHydrationWarning
             >
               {showTextGenerate ? (
@@ -65,11 +65,11 @@ export default function Hero() {
           </div>
 
           {/* Pixelated Canvas - Right Half */}
-          <div className="mb-15 ml-60 flex items-center justify-center">
+          <div className="mt-6 md:mt-0 flex items-center justify-center md:justify-end">
             <PixelatedCanvas
-              src="/dp23.png"
-              width={400}
-              height={500}
+              src="/dp4.png"
+              width={320}
+              height={420}
               cellSize={3}
               dotScale={0.9}
               shape="square"

@@ -54,8 +54,8 @@ export const AnimatedTestimonials = ({
     }
   }, [autoplay]);
   return (
-    <div className="mx-auto w-full px-4 py-20 font-sans antialiased md:px-8 lg:px-12">
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+    <div className="mx-auto w-full px-4 py-4 md:py-12 lg:py-20 font-sans antialiased md:px-8 lg:px-12">
+      <div className="relative grid grid-cols-1 gap-6 md:gap-12 lg:gap-20 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -122,15 +122,15 @@ export const AnimatedTestimonials = ({
               duration: 0.2,
               ease: "easeInOut",
             }}
-            className="h-96 flex flex-col justify-start"
+            className="h-auto md:h-96 flex flex-col justify-start"
           >
-            <h3 className="text-2xl font-bold text-white dark:text-white">
+            <h3 className="text-xl md:text-2xl font-bold text-white dark:text-white">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <p className="text-xs md:text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
+            <motion.p className="mt-3 md:mt-6 lg:mt-8 text-sm md:text-base lg:text-lg text-gray-500 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -156,7 +156,7 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex flex-col gap-4 pt-8">
+          <div className="flex flex-col gap-3 md:gap-4 pt-4 md:pt-6 lg:pt-8">
             <div className="flex gap-3">
               {testimonials[active].deployed && (
                 <a
@@ -182,7 +182,7 @@ export const AnimatedTestimonials = ({
               )}
             </div>
           </div>
-          <div className="mt-4 flex gap-4 pt-12 md:pt-0">
+          <div className="mt-3 md:mt-4 flex gap-4 pt-4 md:pt-12 lg:pt-0">
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
