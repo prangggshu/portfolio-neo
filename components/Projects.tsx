@@ -17,6 +17,16 @@ export default function Projects() {
       code: "https://github.com/prangggshu/GreenCart-Public",
     },
     {
+  quote:
+    "An AI-powered legal assistant that processes legal documents, performs clause-level retrieval using Retrieval-Augmented Generation (RAG), generates grounded legal responses with a local LLaMA-3 model via Ollama, and detects potential legal risks using semantic search, FastAPI, FAISS vector database, and Legal NLP techniques.",
+  name: "AI Legal Assistant",
+  designation:
+    "FastAPI • Python • RAG • FAISS • Ollama • LLaMA-3 • Sentence Transformers • PDF Processing • NLP",
+  src: "/legalassistant.png", // replace with your actual screenshot
+  deployed: "", // add deployed link later if hosted
+  code: "https://github.com/prangggshu/legal-chatbot", // update if needed
+},
+    {
       quote:
         "Student-led startup platform connecting societies, courses, and faculties at KIIT University with responsive UI, Supabase backend integration, real-time updates, and Git/GitHub version control across a 6-member web development team.",
       name: "KIIT Saathi",
