@@ -86,7 +86,7 @@ export default function Education() {
               </div>
               <p className="text-zinc-300 mb-2">Kalinga Institute of Industrial Technology</p>
               <p className="text-zinc-300">
-                Current CGPA: 9.23/10
+                Current CGPA: 9.30/10
               </p>
             </div>
 
