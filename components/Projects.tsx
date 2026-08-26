@@ -9,7 +9,7 @@ export default function Projects() {
   const projects = [
     {
   quote:
-    "AI agent benchmarking platform that runs the same agent across up to 5 candidate models in parallel, measures tokens, latency, cost, and reliability, uses an optional two-stage LLM judge for quality evaluation, streams results live, generates PDF reports, and maintains model leaderboards.",
+    "AI agent benchmarking platform that runs the same agent across up to 5 candidate models in parallel, measures tokens, latency, cost, and reliability, uses an two-stage LLM judge for quality evaluation, streams results live, generates PDF reports, and maintains model leaderboards.",
   name: "AgentBench",
   designation: "Python • FastAPI • React • Vite • TypeScript • Tailwind CSS • MongoDB • LLM Judge",
   src: "/agentbench.png",
@@ -25,7 +25,7 @@ export default function Projects() {
 },
 {
   quote:
-    "LangGraph-based test data mining agent that takes test cases or user stories and optional test results, mines existing data from MongoDB and similar data from ChromaDB, detects coverage gaps, generates coherent new test-data rows through a human-in-the-loop review, and produces clean CSV output with optional persistence.",
+    "LangGraph-based test data mining agent that takes test cases or user stories and optional test results, mines data from MongoDB and ChromaDB, detects coverage gaps, generates coherent new test-data rows through a HITL review, and produces clean CSV output with optional persistence.",
   name: "Test Data Mining Agent",
   designation: "Python • LangGraph • FastAPI • React • ChromaDB • MongoDB • Gemini • Sentence Transformers",
   src: "/tdm.png",
@@ -33,7 +33,7 @@ export default function Projects() {
 },
     {
   quote:
-    "An AI-powered legal assistant that processes legal documents, performs clause-level retrieval using Retrieval-Augmented Generation (RAG), generates grounded legal responses with a local LLaMA-3 model via Ollama, and detects potential legal risks using semantic search, FastAPI, FAISS vector database, and Legal NLP techniques.",
+    "An AI-powered legal assistant that processes legal documents, performs clause-level retrieval using RAG, generates grounded legal responses, and detects potential legal risks using semantic search, FastAPI, FAISS vector database, and Legal NLP techniques.",
   name: "AI Legal Assistant",
   designation:
     "FastAPI • Python • RAG • FAISS • Ollama • LLaMA-3 • Sentence Transformers • PDF Processing • NLP",
