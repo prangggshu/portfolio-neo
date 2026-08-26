@@ -25,7 +25,7 @@ export default function Projects() {
 },
 {
   quote:
-    "LangGraph-based test data mining agent that takes test cases or user stories and optional test results, mines data from MongoDB and ChromaDB, detects coverage gaps, generates coherent new test-data rows through a HITL review, and produces clean CSV output with optional persistence.",
+    "LangGraph-based AI-powered test data mining agent that analyzes requirements, test cases, and existing data to identify gaps and automatically generate datasets.",
   name: "Test Data Mining Agent",
   designation: "Python • LangGraph • FastAPI • React • ChromaDB • MongoDB • Gemini • Sentence Transformers",
   src: "/tdm.png",
