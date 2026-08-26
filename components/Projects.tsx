@@ -8,6 +8,30 @@ export default function Projects() {
   const words = ["clean", "focused", "modern", "reliable"];
   const projects = [
     {
+  quote:
+    "AI agent benchmarking platform that runs the same agent across up to 5 candidate models in parallel, measures tokens, latency, cost, and reliability, uses an optional two-stage LLM judge for quality evaluation, streams results live, generates PDF reports, and maintains model leaderboards.",
+  name: "AgentBench",
+  designation: "Python • FastAPI • React • Vite • TypeScript • Tailwind CSS • MongoDB • LLM Judge",
+  src: "/agentbench.png",
+  code: "https://github.com/mprangshu/AgentBench",
+},
+{
+  quote:
+    "Agent Recommender & Q&A chatbot that recommends the best-fit AI agent for a user's needs and answers agent-related questions using documentation-grounded retrieval, with deterministic fallbacks, a CLI, HTTP API, and Streamlit web UI.",
+  name: "Dispatch",
+  designation: "Python • FastAPI • Streamlit • ChromaDB • RAG • Semantic Search • LLM",
+  src: "/dispatch.png",
+  code: "https://github.com/mprangshu/dispatch",
+},
+{
+  quote:
+    "LangGraph-based test data mining agent that takes test cases or user stories and optional test results, mines existing data from MongoDB and similar data from ChromaDB, detects coverage gaps, generates coherent new test-data rows through a human-in-the-loop review, and produces clean CSV output with optional persistence.",
+  name: "Test Data Mining Agent",
+  designation: "Python • LangGraph • FastAPI • React • ChromaDB • MongoDB • Gemini • Sentence Transformers",
+  src: "/tdm.png",
+  code: "https://github.com/mprangshu/Test-Data-Mining-Agent",
+},
+    {
       quote:
         "Full-stack e-commerce platform with user and seller dashboards, JWT authentication, Stripe payments, dynamic product browsing, real-time cart updates, and search/filter functionality using React, Node.js, MongoDB, and Express.",
       name: "GreenCart",
