@@ -32,15 +32,6 @@ export default function Projects() {
   code: "https://github.com/mprangshu/Test-Data-Mining-Agent",
 },
     {
-      quote:
-        "Full-stack e-commerce platform with user and seller dashboards, JWT authentication, Stripe payments, dynamic product browsing, real-time cart updates, and search/filter functionality using React, Node.js, MongoDB, and Express.",
-      name: "GreenCart",
-      designation: "React • Node.js • MongoDB • Express • JWT • Stripe",
-      src: "/greencart.png",
-      deployed: "https://greencart-olive-kappa.vercel.app/",
-      code: "https://github.com/prangggshu/GreenCart-Public",
-    },
-    {
   quote:
     "An AI-powered legal assistant that processes legal documents, performs clause-level retrieval using Retrieval-Augmented Generation (RAG), generates grounded legal responses with a local LLaMA-3 model via Ollama, and detects potential legal risks using semantic search, FastAPI, FAISS vector database, and Legal NLP techniques.",
   name: "AI Legal Assistant",
@@ -50,6 +41,15 @@ export default function Projects() {
   deployed: "", // add deployed link later if hosted
   code: "https://github.com/prangggshu/legal-chatbot", // update if needed
 },
+    {
+      quote:
+        "Full-stack e-commerce platform with user and seller dashboards, JWT authentication, Stripe payments, dynamic product browsing, real-time cart updates, and search/filter functionality using React, Node.js, MongoDB, and Express.",
+      name: "GreenCart",
+      designation: "React • Node.js • MongoDB • Express • JWT • Stripe",
+      src: "/greencart.png",
+      deployed: "https://greencart-olive-kappa.vercel.app/",
+      code: "https://github.com/prangggshu/GreenCart-Public",
+    },
     {
       quote:
         "Student-led startup platform connecting societies, courses, and faculties at KIIT University with responsive UI, Supabase backend integration, real-time updates, and Git/GitHub version control across a 6-member web development team.",
